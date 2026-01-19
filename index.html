@@ -47,15 +47,15 @@
         /* FIXED LAST PHOTO FOR MOBILE */
         #lastPhoto { 
             display: none;
-            width: 100%; 
-            height: 100%; 
+            width: 100vw; 
+            height: 100vh; 
             position: fixed; 
             top: 0; 
             left: 0; 
-            object-fit: cover; 
+            object-fit: contain; 
+            background-color: #000;
             z-index: 1000 !important; /* Forces it to the absolute front */
             animation: zoomIn 1.2s ease-in-out;
-            background-color: #000; /* Helps check if the image is missing */
         }
 
         @keyframes zoomIn { from { transform: scale(1.1); opacity: 0; } to { transform: scale(1); opacity: 1; } }
